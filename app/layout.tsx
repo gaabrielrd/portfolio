@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Libre_Baskerville } from "next/font/google";
 import localFont from "next/font/local";
 import Blobs from "@/components/blobs";
+import { Analytics } from "@vercel/analytics/react";
 
 const bodyFont = Libre_Baskerville({
 	weight: ["400", "700"],
@@ -37,6 +38,7 @@ export default function RootLayout({
 				{children}
 
 				<Blobs />
+				<Analytics />
 			</body>
 		</html>
 	);
