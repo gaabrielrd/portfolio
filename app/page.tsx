@@ -1,95 +1,82 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.scss";
+
+import resourcesImage from "../public/images/3d-fluency-training.png";
+import platformsImage from "../public/images/3d-fluency-knowledge-sharing.png";
+import projectsImage from "../public/images/3d-fluency-keyboard-1.png";
+
+import cubeImage from "../public/images/3d-blocks-blocks-composition-62.png";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	const imgSize = 36;
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+	return (
+		<main className={styles.main}>
+			<div className={styles.card}>
+				{/* Painel da esquerda com as infos */}
+				<div className={styles.leftPanel}>
+					<h2>Gabriel Roda</h2>
+					<p>
+						Desenvolvedor front-end, apaixonado por educação, há 6 anos criando
+						materiais e plataformas, que buscam facilitar o aprendizado, e
+						acesso à educação de milhares de alunos da educação superior no
+						Brasil.
+					</p>
+					<div className={styles.highlights}>
+						<ul>
+							<li>
+								<div className="highlight">
+									<div className="icon">
+										<Image
+											src={resourcesImage}
+											height={imgSize}
+											alt="icone objetos de aprendizagem"
+										/>
+									</div>
+									<span>+ de 500 objetos de aprendizagem criados;</span>
+								</div>
+							</li>
+							<li>
+								<div className="highlight">
+									<div className="icon">
+										{" "}
+										<Image
+											src={platformsImage}
+											height={imgSize}
+											alt="icone objetos de aprendizagem"
+										/>
+									</div>
+									<span>
+										+ de 5 plataformas de aprendizagem/produção de conteúdo
+										desenvolvidas;
+									</span>
+								</div>
+							</li>
+							<li>
+								<div className="highlight">
+									<div className="icon">
+										{" "}
+										<Image
+											src={projectsImage}
+											height={imgSize}
+											alt="icone objetos de aprendizagem"
+										/>
+									</div>
+									<span>
+										+ de 20 projetos criados por diversão, para explorar novas
+										tecnologias e linguagens.
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+				{/* Cubo de fundo */}
+				<div className={styles.cube}>
+					<Image src={cubeImage} height={240} alt="cubo" />
+				</div>
+			</div>
+		</main>
+	);
 }
