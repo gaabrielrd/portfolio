@@ -1,0 +1,40 @@
+.footer {
+	width: 100%;
+	max-width: var(--max-width);
+
+	padding: 0 var(--side-padding);
+
+	margin: auto;
+
+	height: 56px;
+}
+
+.wrapper {
+	font-family: var(--nav-font);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+
+	border-radius: 8px 8px 0 0;
+	background-color: rgba(var(--callout-rgb), 0.5);
+	border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+	border-bottom: none;
+
+	color: rgba(255, 255, 255, 0.4);
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	p {
+		a,
+		a:visited {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}

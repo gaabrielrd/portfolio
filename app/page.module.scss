@@ -3,8 +3,8 @@
 	align-items: center;
 
 	max-width: var(--max-width);
-	min-height: calc(100vh - 56px);
-	margin: auto;
+	min-height: calc(100vh - 56px - 160px - 56px);
+	margin: 80px auto;
 	padding: 0 var(--side-padding);
 }
 
@@ -43,11 +43,18 @@
 	h2 {
 		color: #c3c3c3;
 		letter-spacing: 1px;
+
+		animation: slideDown 800ms ease-in-out forwards;
 	}
+
 	> p {
 		margin: 40px 0;
 		line-height: 1.8;
 		color: #98a9f5;
+
+		opacity: 0;
+		animation: slideDown 800ms ease-in-out forwards;
+		animation-delay: 200ms;
 	}
 
 	li {
@@ -56,6 +63,38 @@
 		line-height: 1.4;
 
 		color: #e3ffffd5;
+		opacity: 0;
+
+		animation: slideLeft 800ms ease-in-out forwards;
+	}
+
+	@for $i from 1 through 3 {
+		li:nth-child(#{$i}n) {
+			animation-delay: #{$i * 200}ms;
+		}
+	}
+
+	@keyframes slideLeft {
+		from {
+			opacity: 0;
+			transform: translateX(16px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes slideDown {
+		from {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 }
 
