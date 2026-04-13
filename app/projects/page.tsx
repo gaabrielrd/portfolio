@@ -40,6 +40,8 @@ const stats = [
 ];
 
 export default function ProjectsPage() {
+	const displayedSections = [...companySections].reverse();
+
 	return (
 		<main className={styles.main}>
 			<section className={styles.hero}>
@@ -90,7 +92,7 @@ export default function ProjectsPage() {
 				</div>
 
 				<nav className={styles.companyNav} aria-label="Empresas e períodos">
-					{companySections.map((company) => (
+					{displayedSections.map((company) => (
 						<a
 							key={company.slug}
 							href={`#${company.slug}`}
@@ -105,7 +107,7 @@ export default function ProjectsPage() {
 			</section>
 
 			<div className={styles.timeline}>
-				{companySections.map((company) => (
+				{displayedSections.map((company) => (
 					<section
 						key={company.slug}
 						id={company.slug}
