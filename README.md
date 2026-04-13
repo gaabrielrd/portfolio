@@ -1,34 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gabriel Roda | Portfolio
 
-## Getting Started
+Portfólio profissional desenvolvido com Next.js para apresentar minha trajetória em front-end, educação digital, produto e plataformas de autoria.
 
-First, run the development server:
+O projeto foi pensado para organizar minha apresentação pessoal, destacar projetos relevantes da carreira e oferecer uma navegação clara entre visão geral, trajetória e contato.
+
+## Visão geral
+
+Este repositório reúne a base do site pessoal **roda.dev**, com foco em:
+
+- apresentação profissional e posicionamento de carreira
+- vitrine de projetos e experiências por empresa
+- narrativa visual autoral, com tipografia, animação e identidade própria
+- estrutura simples para manutenção e atualização de conteúdo
+
+## Acesso
+
+- Site: [roda.dev](https://roda.dev)
+- GitHub: [github.com/gaabrielrd](https://github.com/gaabrielrd)
+- LinkedIn: [linkedin.com/in/gabriel-roda](https://www.linkedin.com/in/gabriel-roda/)
+
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- SCSS Modules
+- `next/font` para tipografia local e Google Fonts
+- Vercel Analytics
+
+## O que o projeto apresenta
+
+- Home com posicionamento profissional e áreas de atuação
+- Página `About` com resumo da trajetória, foco de trabalho e canais de contato
+- Página `Projects` com linha do tempo por empresa e descrição dos principais produtos
+- Conteúdo estruturado para destacar educação digital, authoring, produto e plataformas internas
+
+## Estrutura do projeto
+
+```text
+app/
+  layout.tsx
+  page.tsx
+  about/
+    page.tsx
+  projects/
+    page.tsx
+    projects-data.ts
+components/
+  navbar/
+  footer/
+  blobs/
+public/
+  fonts/
+  images/
+curriculo.md
+projects.md
+```
+
+## Organização do conteúdo
+
+Os principais pontos de manutenção do portfólio estão centralizados em poucos arquivos:
+
+- `app/page.tsx`: mensagem principal da home
+- `app/about/page.tsx`: resumo profissional, foco de atuação e contato
+- `app/projects/projects-data.ts`: base estruturada dos projetos exibidos no site
+- `projects.md`: versão em Markdown da apresentação detalhada dos projetos
+- `curriculo.md`: currículo em Markdown
+
+Essa separação facilita atualizar o site e também reaproveitar o conteúdo em outros formatos, como currículo, GitHub e apresentações.
+
+## Como rodar localmente
+
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+2. Inicie o ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Acesse no navegador:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Scripts disponíveis
 
-## Learn More
+- `npm run dev`: inicia o ambiente local
+- `npm run build`: gera a build de produção
+- `npm run start`: sobe a aplicação em modo produção
+- `npm run lint`: executa o lint do projeto
 
-To learn more about Next.js, take a look at the following resources:
+## Direção do projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este portfólio não foi pensado como um template genérico, mas como uma apresentação profissional autoral. A proposta é unir clareza de navegação, linguagem visual consistente e conteúdo com contexto real de produto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Boa parte da narrativa do site nasce da combinação entre experiência profissional, educação digital e construção de ferramentas para autoria, leitura, analytics e operação.
 
-## Deploy on Vercel
+## Próximos passos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Entre os pontos que podem continuar evoluindo no projeto:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- refinamento contínuo do conteúdo e da narrativa profissional
+- inclusão de estudos de caso mais completos
+- expansão da camada de SEO e metadados sociais
+- adição de imagens de projetos ou capturas selecionadas
+
+## Licença
+
+Este repositório representa meu portfólio pessoal. O código pode servir como referência de estrutura, mas o conteúdo textual, a narrativa profissional e a identidade do projeto são de uso pessoal.

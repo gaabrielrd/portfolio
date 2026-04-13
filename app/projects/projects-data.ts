@@ -27,7 +27,7 @@ export const companySections: CompanySection[] = [
 	{
 		slug: "uniasselvi",
 		company: "Uniasselvi",
-		period: "2021 - 2023",
+		period: "03/2018 - 12/2022",
 		role: "Front-end e experiências digitais para educação",
 		summary:
 			"Criação de objetos, trilhas, plataformas editoriais e experiências de estudo para milhares de alunos da educação superior.",
@@ -211,7 +211,7 @@ export const companySections: CompanySection[] = [
 	{
 		slug: "delinea",
 		company: "Delinea",
-		period: "2024",
+		period: "02/2023 - 10/2023",
 		role: "Produto digital e front-end para plataformas educacionais",
 		summary:
 			"Atuação em manutenção, interface e estratégia de produto para catálogo, marketplace e autoria SCORM.",
@@ -267,7 +267,7 @@ export const companySections: CompanySection[] = [
 	{
 		slug: "adapt",
 		company: "Adapt",
-		period: "2024 - 2026",
+		period: "10/2023 - 03/2026",
 		role: "Plataformas de autoria, operação e automação para conteúdo digital",
 		summary:
 			"Atuação em uma família de produtos conectando autoria, armazenamento, analytics, IA e operação comercial em um ecossistema digital mais amplo.",
