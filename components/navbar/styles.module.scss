@@ -3,7 +3,7 @@
 	top: 8px;
 	z-index: 30;
 
-	max-width: var(--max-width);
+	max-width: var(--frame-max-width);
 	width: 100%;
 	margin: 0 auto;
 
@@ -79,9 +79,12 @@
 
 	h1 {
 		background: var(--title-gradient);
+		background-size: 200% 200%;
+		background-position: 100% 50%;
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		animation: titleShift 16s linear infinite alternate;
 	}
 }
 
@@ -102,5 +105,14 @@
 	to {
 		transform: translateY(0);
 		opacity: 1;
+	}
+}
+
+@keyframes titleShift {
+	from {
+		background-position: 100% 50%;
+	}
+	to {
+		background-position: 0% 50%;
 	}
 }

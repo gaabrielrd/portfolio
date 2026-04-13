@@ -148,14 +148,47 @@ https://delinea.com.br/autorya/
 
 ### Liviu Content
 
+Uma plataforma completa de autoria. Trabalhei nela desde sua concepção.
+
+Ela permite criar materiais e exportar em formato scorm, pdf ou publicar online com um link
+Os materiais podem ser criados no formato de slides ou one-page
+Possui uma central de midias para organizacao de todos documentos
+Tem modo de edição, visualização, e revisão
+Disciplinas podem ter temas com capas, e configurações personalizadas
+São 35 tipos de elementos que podem ser criados nos slides e one-page
+O tema permite criar variantes dos elementos, para personalizar rapidamente o material aplicando um tema
+Possui um recurso de adaptive learning, onde o aluno segue pelo material por um caminho personalizado, com nodes de desempenho em atividades, espera, e escolha.
+
 ### Liviu Drive
+
+Uma plataforma similar ao google drive para armazenamento de arquivos, organizacao e compartilhamento
+Desenvolvi ela no aws amplify, fazendo todo stack de desenvolvimento, desde a criacao do repositorio ao deploy
 
 ### Liviu Flow
 
+Um gerenciador de projetos completo, com trabalho colaborativo, e fluxos personalizados
+Os fluxos sao conjuntos de tarefas que podem ser facilmente criados e editados
+Ao criar uma entrega em um projeto, voce pode adicionar um fluxo, e todas tarefas sao adicionadas de uma vez, como um template
+Tarefas possuem titulo, descricao, responsavel, supervisor, status, prioridade, datas, comentarios, arquivos e subtarefas
+Tarefas podem ser vinculadas entre si
+
 ### Liviu Analytics
+
+Uma ferramenta de analytics, feita para integrar diretamente com nossos materiais da Liviu Content
+permite criar formularios de perguntas, como google forms
+permite criar tags de acompanhamento, que geram um script, que quando adicionado a uma pagina captura eventos de navegacao e comportamento do usuario
 
 ### Monday Pannels
 
+Uma plataforma simples para compartilhar paineis Monday com nossos clientes, para que eles pudessem acompanhar o andamento de seus projetos
+
 ### AI Playground
 
+Um playground para interagir com varios modelos de IA, fluxos de trabalho (por exemplo, criacao de legendas automaticas para video), a fim de expandir nosso dominio de ferramentas aws. Feito com aws amplify e modelos do bedrock
+
 ### Liviu CRM
+
+Uma plataforma para criacao de propostas comerciais
+Permite cadastrar produtos, categorias subcategorias
+Permite criar e salvar uma proposta com ppt
+Cada proposta possui uma lista de produtos, desconto para cada um, preco, subtotal, impostos, desconto da proposta, e valor final

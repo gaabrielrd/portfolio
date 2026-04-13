@@ -268,51 +268,94 @@ export const companySections: CompanySection[] = [
 		slug: "adapt",
 		company: "Adapt",
 		period: "2024 - 2026",
-		role: "Ecossistema de produtos e operação digital",
+		role: "Plataformas de autoria, operação e automação para conteúdo digital",
 		summary:
-			"Fase atual com atuação em uma família de produtos; nesta primeira versão da página, os itens entram como visão geral do portfólio recente.",
+			"Atuação em uma família de produtos conectando autoria, armazenamento, analytics, IA e operação comercial em um ecossistema digital mais amplo.",
 		projects: [
 			{
 				title: "Liviu Content",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Plataforma completa de autoria acompanhada desde a concepção, voltada para criação, revisão e publicação de materiais digitais em diferentes formatos.",
+				highlights: [
+					"Exportação em SCORM, PDF ou publicação online por link",
+					"Criação de materiais em formato de slides ou one-page",
+					"35 tipos de elementos com variantes de tema para personalização rápida",
+					"Adaptive learning com caminhos personalizados e nodes de desempenho",
+				],
+				tags: ["Authoring", "SCORM", "PDF", "Adaptive learning"],
+				status: "published",
 			},
 			{
 				title: "Liviu Drive",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Plataforma inspirada em um drive de arquivos para armazenamento, organização e compartilhamento de documentos dentro do ecossistema da empresa.",
+				highlights: [
+					"Experiência focada em organização e compartilhamento de arquivos",
+					"Desenvolvimento completo com AWS Amplify",
+					"Participação em todo o stack, do repositório ao deploy",
+				],
+				tags: ["AWS Amplify", "Armazenamento", "Compartilhamento"],
+				status: "published",
 			},
 			{
 				title: "Liviu Flow",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Gerenciador de projetos colaborativo com fluxos personalizados para transformar etapas recorrentes em processos reutilizáveis.",
+				highlights: [
+					"Fluxos configuráveis que funcionam como templates de tarefas",
+					"Entregas que recebem várias tarefas automaticamente a partir de um fluxo",
+					"Tarefas com responsáveis, status, prioridade, datas, comentários e arquivos",
+					"Suporte a subtarefas e vínculo entre tarefas relacionadas",
+				],
+				tags: ["Gestão de projetos", "Colaboração", "Fluxos"],
+				status: "published",
 			},
 			{
 				title: "Liviu Analytics",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Ferramenta de analytics pensada para se integrar diretamente aos materiais criados na Liviu Content e acompanhar navegação e comportamento.",
+				highlights: [
+					"Criação de formulários de perguntas em experiência similar ao Google Forms",
+					"Tags de acompanhamento que geram script para captura de eventos",
+					"Integração entre conteúdo publicado e dados de uso",
+				],
+				tags: ["Analytics", "Tracking", "Formulários"],
+				status: "published",
 			},
 			{
 				title: "Monday Pannels",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Plataforma enxuta para compartilhar painéis do Monday com clientes e dar visibilidade ao andamento dos projetos.",
+				highlights: [
+					"Compartilhamento simplificado de painéis externos",
+					"Experiência voltada para acompanhamento de projetos por clientes",
+				],
+				tags: ["Monday", "Client portal", "Dashboards"],
+				status: "published",
 			},
 			{
 				title: "AI Playground",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Playground para explorar modelos de IA e fluxos de trabalho automatizados, ampliando o domínio da equipe sobre ferramentas AWS e Bedrock.",
+				highlights: [
+					"Interação com múltiplos modelos de IA em um mesmo ambiente",
+					"Testes de fluxos como criação automática de legendas para vídeo",
+					"Implementação com AWS Amplify e modelos do Bedrock",
+				],
+				tags: ["IA", "AWS Amplify", "Bedrock"],
+				status: "published",
 			},
 			{
 				title: "Liviu CRM",
 				description:
-					"Projeto em andamento listado como parte do ecossistema atual da Adapt. Os detalhes entram em uma próxima atualização da página.",
-				status: "teaser",
+					"Plataforma para criação de propostas comerciais com composição de produtos, descontos, impostos e geração de apresentação final.",
+				highlights: [
+					"Cadastro de produtos, categorias e subcategorias",
+					"Montagem e salvamento de propostas com PPT",
+					"Cálculo por item com desconto, subtotal, impostos e valor final",
+				],
+				tags: ["CRM", "Comercial", "Propostas"],
+				status: "published",
 			},
 		],
 	},
