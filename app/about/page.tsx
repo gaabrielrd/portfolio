@@ -108,12 +108,14 @@ export default function AboutPage() {
 		<main className={styles.main}>
 			<section className={styles.hero}>
 				<div className={styles.heroCopy}>
-					<p className={styles.eyebrow}>Sobre</p>
-					<h1>Gabriel Roda</h1>
-					<h2>Desenvolvedor front-end com foco em educação e produto digital.</h2>
-					<p className={styles.intro}>{intro}</p>
+					<p className={`${styles.eyebrow} reveal-up`}>Sobre</p>
+					<h1 className="reveal-up reveal-delay-1">Gabriel Roda</h1>
+					<h2 className="reveal-up reveal-delay-2">
+						Desenvolvedor front-end com foco em educação e produto digital.
+					</h2>
+					<p className={`${styles.intro} reveal-up reveal-delay-3`}>{intro}</p>
 
-					<div className={styles.heroActions}>
+					<div className={`${styles.heroActions} reveal-up reveal-delay-4`}>
 						<Link href="/projects">Ver projetos</Link>
 						<Link href="mailto:gabriel@roda.dev">Entrar em contato</Link>
 					</div>
@@ -122,7 +124,10 @@ export default function AboutPage() {
 				<div className={styles.heroVisual} aria-hidden="true">
 					<div className={styles.highlightList}>
 						{highlights.map((highlight) => (
-							<div key={highlight.label} className={styles.highlight}>
+							<div
+								key={highlight.label}
+								className={`${styles.highlight} reveal-up reveal-delay-2`}
+							>
 								<Image src={highlight.icon} height={32} alt="" />
 								<div>
 									<strong>{highlight.value}</strong>
@@ -132,21 +137,24 @@ export default function AboutPage() {
 						))}
 					</div>
 
-					<div className={styles.cube}>
+					<div className={`${styles.cube} float-drift`}>
 						<Image src={cubeImage} height={220} alt="" />
 					</div>
 				</div>
 			</section>
 
 			<section className={styles.focusSection}>
-				<div className={styles.sectionHeading}>
+				<div className={`${styles.sectionHeading} reveal-up`}>
 					<p className={styles.sectionLabel}>O que eu construo</p>
 					<h2>Interfaces e plataformas que precisam ser claras, úteis e fáceis de evoluir.</h2>
 				</div>
 
 				<div className={styles.focusGrid}>
 					{focusAreas.map((area) => (
-						<article key={area.title} className={styles.focusItem}>
+						<article
+							key={area.title}
+							className={`${styles.focusItem} reveal-up reveal-delay-1`}
+						>
 							<h3>{area.title}</h3>
 							<p>{area.description}</p>
 						</article>
@@ -155,14 +163,17 @@ export default function AboutPage() {
 			</section>
 
 			<section className={styles.careerSection}>
-				<div className={styles.sectionHeading}>
+				<div className={`${styles.sectionHeading} reveal-up`}>
 					<p className={styles.sectionLabel}>Trajetória</p>
 					<h2>Uma leitura rápida das frentes em que venho atuando.</h2>
 				</div>
 
 				<div className={styles.careerList}>
 					{careerMoments.map((moment) => (
-						<article key={moment.company} className={styles.careerItem}>
+						<article
+							key={moment.company}
+							className={`${styles.careerItem} reveal-up reveal-delay-1`}
+						>
 							<p>{moment.period}</p>
 							<h3>{moment.company}</h3>
 							<h4>{moment.role}</h4>
@@ -173,17 +184,17 @@ export default function AboutPage() {
 			</section>
 
 			<section className={styles.closing}>
-				<div className={styles.sectionHeading}>
+				<div className={`${styles.sectionHeading} reveal-up`}>
 					<p className={styles.sectionLabel}>Contato</p>
 					<h2>Se fizer sentido para o que você está construindo, vamos conversar.</h2>
 				</div>
 
-				<p className={styles.closingCopy}>
+				<p className={`${styles.closingCopy} reveal-up reveal-delay-1`}>
 					Posso contribuir com front-end, produto educacional, authoring,
 					plataformas internas e experiências digitais com foco em clareza.
 				</p>
 
-				<div className={styles.contactLinks}>
+				<div className={`${styles.contactLinks} reveal-up reveal-delay-2`}>
 					{contactLinks.map((link) => (
 						<Link
 							key={link.href}

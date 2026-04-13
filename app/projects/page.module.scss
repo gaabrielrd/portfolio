@@ -26,9 +26,8 @@
 	z-index: 1;
 
 	h1 {
-		max-width: 10ch;
-		font-size: clamp(2.2rem, 5.8vw, 4rem);
-		line-height: 0.94;
+		font-size: clamp(1.1rem, 2.9vw, 2rem);
+		line-height: 1.08;
 		letter-spacing: -0.04em;
 		color: #f6f7fb;
 	}
@@ -420,12 +419,6 @@
 		padding: 48px 28px;
 	}
 
-	.heroCopy {
-		h1 {
-			max-width: 12ch;
-		}
-	}
-
 	.heroVisual {
 		min-height: auto;
 	}
@@ -466,7 +459,6 @@
 		padding: 36px 22px;
 	}
 
-	.heroCopy h1,
 	.companyIntro h2,
 	.closing h2,
 	.projectHeader h4 {

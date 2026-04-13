@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.scss";
 
 import resourcesImage from "../public/images/3d-fluency-training.png";
@@ -12,71 +13,113 @@ export default function Home() {
 
 	return (
 		<main className={styles.main}>
-			<div className={styles.card}>
-				{/* Painel da esquerda com as infos */}
-				<div className={styles.leftPanel}>
-					<h2>Gabriel Roda</h2>
-					<p>
-						Desenvolvedor front-end, apaixonado por educação, há 6 anos criando
-						materiais e plataformas, que buscam facilitar o aprendizado, e
-						acesso à educação de milhares de alunos da educação superior no
-						Brasil.
+			<section className={styles.hero}>
+				<div className={styles.copy}>
+					<p className={`${styles.eyebrow} reveal-up`}>roda.dev</p>
+					<h1 className="reveal-up reveal-delay-1">
+						Front-end para experiências de aprendizagem, produto e conteúdo
+						digital.
+					</h1>
+					<p className={`${styles.intro} reveal-up reveal-delay-2`}>
+						Sou um desenvolvedor com foco em front-end, apaixonado por educação
+						e produto digital.
 					</p>
-					<div className={styles.highlights}>
+					<p className={`${styles.intro} reveal-up reveal-delay-2`}>
+						Estou sempre buscando me atualizar e conectar às novas tendências e
+						tecnologias.
+					</p>
+					<p className={`${styles.intro} reveal-up reveal-delay-2`}>
+						Crio materiais, plataformas e fluxos digitais que aproximam clareza,
+						escala e cuidado em projetos voltados para educação.
+					</p>
+					<div className={`${styles.actions} reveal-up reveal-delay-3`}>
+						<Link href="/projects">Ver projetos</Link>
+						<Link href="/about">Sobre mim</Link>
+					</div>
+				</div>
+
+				<div className={styles.visual} aria-hidden="true">
+					<div className={styles.metrics}>
 						<ul>
-							<li>
-								<div className="highlight">
-									<div className="icon">
-										<Image
-											src={resourcesImage}
-											height={imgSize}
-											alt="icone objetos de aprendizagem"
-										/>
-									</div>
-									<span>+ de 500 objetos de aprendizagem criados;</span>
+							<li className="reveal-up reveal-delay-2">
+								<div className={styles.metricIcon}>
+									<Image
+										src={resourcesImage}
+										height={imgSize}
+										alt="icone objetos de aprendizagem"
+									/>
+								</div>
+								<div>
+									<strong>+ de 500</strong>
+									<span>objetos de aprendizagem criados</span>
 								</div>
 							</li>
-							<li>
-								<div className="highlight">
-									<div className="icon">
-										{" "}
-										<Image
-											src={platformsImage}
-											height={imgSize}
-											alt="icone objetos de aprendizagem"
-										/>
-									</div>
-									<span>
-										+ de 5 plataformas de aprendizagem/produção de conteúdo
-										desenvolvidas;
-									</span>
+							<li className="reveal-up reveal-delay-3">
+								<div className={styles.metricIcon}>
+									<Image
+										src={platformsImage}
+										height={imgSize}
+										alt="icone plataformas"
+									/>
+								</div>
+								<div>
+									<strong>+ de 5</strong>
+									<span>plataformas de aprendizagem e produção</span>
 								</div>
 							</li>
-							<li>
-								<div className="highlight">
-									<div className="icon">
-										{" "}
-										<Image
-											src={projectsImage}
-											height={imgSize}
-											alt="icone objetos de aprendizagem"
-										/>
-									</div>
-									<span>
-										+ de 20 projetos criados por diversão, para explorar novas
-										tecnologias e linguagens.
-									</span>
+							<li className="reveal-up reveal-delay-4">
+								<div className={styles.metricIcon}>
+									<Image
+										src={projectsImage}
+										height={imgSize}
+										alt="icone projetos"
+									/>
+								</div>
+								<div>
+									<strong>+ de 20</strong>
+									<span>projetos exploratórios em novas tecnologias</span>
 								</div>
 							</li>
 						</ul>
 					</div>
-				</div>
 
-				{/* Cubo de fundo */}
-				<div className={styles.cube}>
-					<Image src={cubeImage} height={240} alt="cubo" />
+					<div className={`${styles.cube} float-drift`}>
+						<Image src={cubeImage} height={240} alt="cubo" />
+					</div>
 				</div>
-			</div>
+			</section>
+
+			<section className={styles.support}>
+				<div className="reveal-up">
+					<p className={styles.sectionLabel}>Foco</p>
+					<h2>
+						Interfaces que ajudam pessoas a estudar, produzir e decidir melhor.
+					</h2>
+				</div>
+				<div className={styles.columns}>
+					<article className="reveal-up reveal-delay-1">
+						<h3>Educação digital</h3>
+						<p>
+							Materiais, trilhas, leitura responsiva e interações que reduzem
+							atrito no aprendizado.
+						</p>
+					</article>
+					<article className="reveal-up reveal-delay-2">
+						<h3>Produto com contexto</h3>
+						<p>
+							Front-end conectado a fluxo, operação e evolução real de
+							plataforma, não só à camada visual.
+						</p>
+					</article>
+					<article className="reveal-up reveal-delay-3">
+						<h3>Ferramentas internas</h3>
+						<p>
+							Ambientes de autoria e produção pensados para dar velocidade e
+							consistência a times de conteúdo.
+						</p>
+					</article>
+				</div>
+			</section>
 		</main>
 	);
 }

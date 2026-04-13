@@ -71,3 +71,66 @@ a {
 	display: flex;
 	flex-direction: column;
 }
+
+.reveal-up {
+	opacity: 0;
+	animation: revealUp 820ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-fade {
+	opacity: 0;
+	animation: revealFade 900ms ease forwards;
+}
+
+.reveal-delay-1 {
+	animation-delay: 120ms;
+}
+
+.reveal-delay-2 {
+	animation-delay: 220ms;
+}
+
+.reveal-delay-3 {
+	animation-delay: 320ms;
+}
+
+.reveal-delay-4 {
+	animation-delay: 420ms;
+}
+
+.float-drift {
+	animation: floatDrift 9s ease-in-out infinite;
+}
+
+@keyframes revealUp {
+	from {
+		opacity: 0;
+		transform: translateY(18px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes revealFade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes floatDrift {
+	0%,
+	100% {
+		transform: translateY(0) rotate(18deg);
+	}
+
+	50% {
+		transform: translateY(-12px) rotate(21deg);
+	}
+}
