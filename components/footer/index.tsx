@@ -6,7 +6,7 @@ export default function Footer() {
 		<div className={styles.footer}>
 			<div className={styles.wrapper}>
 				<p>
-					© 2023 <a href="mailto:gabriel@roda.dev">gabriel@roda.dev</a>
+					© 2026 <a href="mailto:gabriel@roda.dev">gabriel@roda.dev</a>
 				</p>
 
 				<p>

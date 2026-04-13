@@ -35,10 +35,13 @@ export default function RootLayout({
 			<head></head>
 
 			<body className={[bodyFont.variable, navFont.variable].join(" ")}>
-				<Navbar />
-				{children}
-
-				<Blobs />
+				<div className="app-shell">
+					<Navbar />
+					<div className="page-shell">
+						{children}
+						<Blobs />
+					</div>
+				</div>
 				<Footer />
 				<Analytics />
 			</body>

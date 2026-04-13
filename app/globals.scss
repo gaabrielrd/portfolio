@@ -41,6 +41,10 @@ body {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	color: rgb(var(--foreground-rgb));
 	background: linear-gradient(
 			to bottom,
@@ -53,4 +57,16 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.app-shell {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-shell {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
