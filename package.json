@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check:locales": "node scripts/check-locale-parity.mjs"
   },
   "dependencies": {
     "@types/next": "^9.0.0",
@@ -17,6 +18,7 @@
     "animejs": "^4.3.6",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.3",
+    "i18next": "^26.0.4",
     "next": "^16.2.3",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",

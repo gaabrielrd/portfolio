@@ -1,0 +1,446 @@
+{
+  "metadata": {
+    "title": "Projects | roda.dev",
+    "description": "Gabriel Roda's professional projects across education, digital platforms, authoring, and learning experiences."
+  },
+  "hero": {
+    "eyebrow": "Projects",
+    "title": "Products, experiences, and tools built to improve how people learn.",
+    "description": "From learning object production to full authoring and digital reading platforms, this page organizes the projects that shaped my recent path in education and product work.",
+    "actions": {
+      "timeline": "Explore the journey",
+      "contactHref": "mailto:gabriel@roda.dev",
+      "contactLabel": "Talk about projects"
+    },
+    "stats": [
+      {
+        "alt": "Companies icon",
+        "label": "companies",
+        "value": 3
+      },
+      {
+        "alt": "Projects icon",
+        "label": "mapped projects",
+        "value": 19
+      },
+      {
+        "alt": "Journey icon",
+        "label": "journey phases",
+        "value": 3
+      }
+    ],
+    "cubeAlt": "3D cube illustration"
+  },
+  "overview": {
+    "eyebrow": "Timeline",
+    "title": "A quick look at the evolution between content, product, and authoring.",
+    "ariaLabel": "Companies and periods"
+  },
+  "projectStatus": {
+    "published": "published project",
+    "teaser": "being updated"
+  },
+  "tagsAriaLabel": "Technologies and themes",
+  "closing": {
+    "eyebrow": "Next step",
+    "title": "If any of these projects connects with what you are building, let's talk.",
+    "description": "I can help with front-end, educational product work, authoring, interfaces for internal operations, and digital experiences focused on clarity.",
+    "actions": {
+      "emailHref": "mailto:gabriel@roda.dev",
+      "emailLabel": "Send email",
+      "linkedinHref": "https://www.linkedin.com/in/gabriel-roda/",
+      "linkedinLabel": "LinkedIn"
+    }
+  },
+  "companySections": [
+    {
+      "slug": "uniasselvi",
+      "company": "Uniasselvi",
+      "period": "03/2018 - 12/2022",
+      "role": "Front-end and digital experiences for education",
+      "summary": "Creation of learning objects, learning paths, editorial platforms, and study experiences for thousands of higher education students.",
+      "projects": [
+        {
+          "title": "Learning Objects",
+          "description": "Development of animated and interactive materials in Adobe Captivate, with continuous evolution of the templates used by the team.",
+          "highlights": [
+            "Built a navigation menu with the Captivate JavaScript API",
+            "Controls for captions, audio, and fullscreen mode",
+            "Maintenance of templates, voice-over work, and illustration and animation production"
+          ],
+          "links": [
+            {
+              "label": "Open example",
+              "href": "https://static.asselvi.com.br/objetos/aprendhtml5/disc/9000/index.html"
+            }
+          ],
+          "tags": [
+            "Captivate",
+            "JavaScript",
+            "Adobe Suite"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Learning Path",
+          "description": "Redesign of the digital study experience with reusable HTML templates for multiple learning path formats.",
+          "highlights": [
+            "Shared architecture for menus and interactions across different formats",
+            "Notes and highlights on selected passages with access through a global menu",
+            "Accessibility features, dynamic fetch, and dedicated pages for videos and objects"
+          ],
+          "links": [
+            {
+              "label": "Course unit path",
+              "href": "https://livrodigital.uniasselvi.com.br/disciplina/17865_perspectivas_profissionais/disciplina/inicio.html"
+            },
+            {
+              "label": "Program path",
+              "href": "https://trilhaaprendizagem.uniasselvi.com.br/curso_les/"
+            },
+            {
+              "label": "Enade path",
+              "href": "https://trilhaaprendizagem.uniasselvi.com.br/enade_qui/"
+            },
+            {
+              "label": "Technical course",
+              "href": "https://trilhaaprendizagem.uniasselvi.com.br/139490_gestao_de_vendas/unidade1.html"
+            },
+            {
+              "label": "Graduate program",
+              "href": "https://trilhaaprendizagem.uniasselvi.com.br/pos/POS03/"
+            },
+            {
+              "label": "Lesson plan",
+              "href": "https://trilhaaprendizagem.uniasselvi.com.br/plano_de_aula/perspectivas/"
+            }
+          ],
+          "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Accessibility"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Digital Book",
+          "description": "Responsive material creation platform with Firebase on the back end, focused on comfortable and customizable reading on mobile devices.",
+          "highlights": [
+            "Real-time editing environment to replicate PDFs in HTML",
+            "Notes, highlights, and visual customization inspired by the Kindle experience",
+            "Undergraduate and graduate versions with responsive reading"
+          ],
+          "links": [
+            {
+              "label": "Graduate example",
+              "href": "https://livrodigital.uniasselvi.com.br/pos/metodologia_do_trabalho_cientifico/?codigo=35177"
+            },
+            {
+              "label": "Undergraduate example",
+              "href": "https://livrodigital.uniasselvi.com.br/GTU100_perspectivas_profissionais/?codigo=25048"
+            }
+          ],
+          "tags": [
+            "Firebase",
+            "HTML",
+            "Responsive reading"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "EdTech Content",
+          "description": "A central hub to guide teachers and teams on formats, templates, and production best practices for digital materials.",
+          "highlights": [
+            "Format catalog with examples and downloadable templates",
+            "Tips section with Firebase for registration, listing, and reading",
+            "Notifications whenever a new tip is published"
+          ],
+          "links": [
+            {
+              "label": "Open EdTech Content",
+              "href": "https://conteudos.uniasselvi.com.br/edtech/"
+            }
+          ],
+          "tags": [
+            "Firebase",
+            "Editorial content",
+            "Internal platform"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Content Tagging",
+          "description": "A project to connect studied content with academic performance and show students, visually, where they should deepen their studies.",
+          "highlights": [
+            "Linking learning paths, the book summary, and course topics",
+            "Classification of paragraphs, images, videos, and objects by faculty",
+            "Integration with grades to display performance indicators by topic"
+          ],
+          "tags": [
+            "Educational data",
+            "Integration",
+            "Learning UX"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Content Hub",
+          "description": "An expansion of tagging into a new discovery layer, dynamically gathering everything a student needs to review about a topic.",
+          "highlights": [
+            "Dynamic search for related content in learning paths and books",
+            "Direct redirection to the exact passage inside the Digital Book",
+            "Guided experience based on performance indicators"
+          ],
+          "tags": [
+            "Dynamic search",
+            "Contextual navigation"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Learning Path Builder",
+          "description": "Browser-based path creation environment designed to speed up production and reduce dependence on technical knowledge.",
+          "highlights": [
+            "Support for multiple learning path formats",
+            "Export of the complete package at the end of the process",
+            "Greater consistency for internal teams and external collaborators"
+          ],
+          "tags": [
+            "Internal tool",
+            "Productivity",
+            "Authoring"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Interactive Resources",
+          "description": "Evolution of learning objects into a lighter, responsive, and more flexible HTML5 format than the previous Captivate flow.",
+          "highlights": [
+            "Creation of templates for educational games and interactions",
+            "A new production process, from briefing to final delivery",
+            "More performance, responsiveness, and customization options"
+          ],
+          "tags": [
+            "HTML5",
+            "Educational games",
+            "Templates"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Thematic Landing Pages",
+          "description": "A series of editorial pages for welcoming, institutional programs, and thematic communication within the Uniasselvi ecosystem.",
+          "highlights": [
+            "Welcome pages, social responsibility, and extension projects",
+            "Experiences focused on discovering institutional information",
+            "Consistent visual execution across different themes and audiences"
+          ],
+          "links": [
+            {
+              "label": "Welcome to Uniasselvi",
+              "href": "https://conteudos.uniasselvi.com.br/ead_uniasselvi/"
+            },
+            {
+              "label": "Social Responsibility",
+              "href": "https://conteudos.uniasselvi.com.br/responsabilidade_social/"
+            },
+            {
+              "label": "Extension programs",
+              "href": "https://conteudos.uniasselvi.com.br/extensao/"
+            },
+            {
+              "label": "Legal documentation",
+              "href": "https://conteudos.uniasselvi.com.br/documentacao_legal/"
+            }
+          ],
+          "tags": [
+            "Landing pages",
+            "Institutional content"
+          ],
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "slug": "delinea",
+      "company": "Delinea",
+      "period": "02/2023 - 10/2023",
+      "role": "Digital product and front-end for educational platforms",
+      "summary": "Work across maintenance, interface, and product strategy for catalog, marketplace, and SCORM authoring.",
+      "projects": [
+        {
+          "title": "DStore",
+          "description": "Maintenance and evolution of a platform for cataloging and organizing educational materials.",
+          "highlights": [
+            "Implementation of new features and fixes",
+            "Improvements to flows and methodologies used by the team"
+          ],
+          "tags": [
+            "Platform",
+            "Maintenance",
+            "UX"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "DStore Store",
+          "description": "Built the storefront interface for DStore, connecting the visual experience with the marketplace API.",
+          "highlights": [
+            "Complete front-end implementation of the platform",
+            "API integration and UX/UI refinements throughout the process"
+          ],
+          "links": [
+            {
+              "label": "Open DStore Store",
+              "href": "https://delinea.com.br/dstore/"
+            }
+          ],
+          "tags": [
+            "Marketplace",
+            "Front-end",
+            "API integration"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Autorya",
+          "description": "Authoring platform for SCORM materials followed from concept through launch.",
+          "highlights": [
+            "Participation in strategic meetings and roadmap discussions",
+            "Contribution to improvements and new features",
+            "Delivery of a platform with layout customization, themes, and interactive blocks"
+          ],
+          "links": [
+            {
+              "label": "Open Autorya",
+              "href": "https://delinea.com.br/autorya/"
+            }
+          ],
+          "tags": [
+            "SCORM",
+            "Authoring",
+            "Product"
+          ],
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "slug": "adapt",
+      "company": "Adapt",
+      "period": "10/2023 - 03/2026",
+      "role": "Authoring, operations, and automation platforms for digital content",
+      "summary": "Work across a family of products connecting authoring, storage, analytics, AI, and commercial operations in a broader digital ecosystem.",
+      "projects": [
+        {
+          "title": "Liviu Content",
+          "description": "Full authoring platform developed from conception, focused on creating, reviewing, and publishing digital materials in different formats.",
+          "highlights": [
+            "Export to SCORM, PDF, or online publishing by link",
+            "Creation of materials in slide or one-page formats",
+            "35 element types with theme variants for fast customization",
+            "Adaptive learning with personalized paths and performance nodes"
+          ],
+          "tags": [
+            "Authoring",
+            "SCORM",
+            "PDF",
+            "Adaptive learning"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Liviu Drive",
+          "description": "A file-drive-inspired platform for storing, organizing, and sharing documents within the company's ecosystem.",
+          "highlights": [
+            "Experience focused on file organization and sharing",
+            "Complete development with AWS Amplify",
+            "Participation across the stack, from repository to deploy"
+          ],
+          "tags": [
+            "AWS Amplify",
+            "Storage",
+            "Sharing"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Liviu Flow",
+          "description": "Collaborative project manager with customizable flows that turn recurring steps into reusable processes.",
+          "highlights": [
+            "Configurable flows that work as task templates",
+            "Deliveries that automatically receive multiple tasks from a flow",
+            "Tasks with owners, status, priority, dates, comments, and files",
+            "Support for subtasks and links between related tasks"
+          ],
+          "tags": [
+            "Project management",
+            "Collaboration",
+            "Flows"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Liviu Analytics",
+          "description": "Analytics tool designed to integrate directly with content created in Liviu Content and track navigation and behavior.",
+          "highlights": [
+            "Creation of question forms in an experience similar to Google Forms",
+            "Tracking tags that generate scripts for event capture",
+            "Integration between published content and usage data"
+          ],
+          "tags": [
+            "Analytics",
+            "Tracking",
+            "Forms"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Monday Panels",
+          "description": "Lean platform to share Monday boards with clients and give them visibility into project progress.",
+          "highlights": [
+            "Simplified sharing of external boards",
+            "Experience focused on client-side project follow-up"
+          ],
+          "tags": [
+            "Monday",
+            "Client portal",
+            "Dashboards"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "AI Playground",
+          "description": "Playground to explore AI models and automated workflows, expanding the team's command of AWS and Bedrock tools.",
+          "highlights": [
+            "Interaction with multiple AI models in the same environment",
+            "Workflow tests such as automatic subtitle generation for video",
+            "Implementation with AWS Amplify and Bedrock models"
+          ],
+          "tags": [
+            "AI",
+            "AWS Amplify",
+            "Bedrock"
+          ],
+          "status": "published"
+        },
+        {
+          "title": "Liviu CRM",
+          "description": "Platform for creating business proposals with product composition, discounts, taxes, and final presentation generation.",
+          "highlights": [
+            "Registration of products, categories, and subcategories",
+            "Proposal building and saving with PPT output",
+            "Per-item calculation with discount, subtotal, taxes, and final value"
+          ],
+          "tags": [
+            "CRM",
+            "Commercial",
+            "Proposals"
+          ],
+          "status": "published"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import re
 from pathlib import Path
 
@@ -26,10 +27,10 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_MD = ROOT / "curriculo-premium.md"
 OUTPUT_DIR = ROOT / "output" / "pdf"
 TMP_DIR = ROOT / "tmp" / "pdfs" / "reportlab-rendered"
-OUTPUT_PDF = OUTPUT_DIR / "gabriel-roda-curriculo-profissional-final.pdf"
+DEFAULT_SOURCE_MD = ROOT / "curriculo-premium.md"
+DEFAULT_OUTPUT_PDF = OUTPUT_DIR / "gabriel-roda-curriculo-profissional-final.pdf"
 
 PAGE_WIDTH, PAGE_HEIGHT = A4
 MARGIN_X = 16 * mm
@@ -65,18 +66,19 @@ def clean_inline(text: str) -> str:
     return text.strip()
 
 
-def read_source() -> list[str]:
-    lines = SOURCE_MD.read_text(encoding="utf-8").splitlines()
+def read_source(source_md: Path) -> list[str]:
+    lines = source_md.read_text(encoding="utf-8").splitlines()
     output: list[str] = []
     for line in lines:
-        if line.strip() == "## Nota de ajuste fino":
+        if line.strip() in {"## Nota de ajuste fino", "## Fine-Tuning Note"}:
             break
         output.append(line.rstrip())
     return output
 
 
-def parse_sections(lines: list[str]) -> dict[str, list[dict[str, object]]]:
+def parse_sections(lines: list[str]) -> tuple[dict[str, list[dict[str, object]]], list[str]]:
     sections: dict[str, list[dict[str, object]]] = {}
+    order: list[str] = []
     current_title: str | None = None
     current_bullets: list[str] = []
 
@@ -102,6 +104,7 @@ def parse_sections(lines: list[str]) -> dict[str, list[dict[str, object]]]:
             flush_bullets()
             current_title = clean_inline(line[3:])
             sections[current_title] = []
+            order.append(current_title)
             continue
 
         if line.startswith("### "):
@@ -120,7 +123,7 @@ def parse_sections(lines: list[str]) -> dict[str, list[dict[str, object]]]:
             sections[current_title].append({"type": "p", "text": clean_inline(line)})
 
     flush_bullets()
-    return sections
+    return sections, order
 
 
 def split_experience_blocks(blocks: list[dict[str, object]]) -> list[list[dict[str, object]]]:
@@ -266,7 +269,7 @@ def add_section_story(
     story.append(SectionHeading(title))
     story.append(Spacer(1, 2 * mm))
 
-    grouped_experience = title == "Experiência profissional"
+    grouped_experience = title in {"Experiência profissional", "Professional Experience"}
     role_group: list = []
 
     def flush_group() -> None:
@@ -284,8 +287,8 @@ def add_section_story(
             target.append(paragraph(str(block["text"]), "ResumeSubsection", styles))
         elif block["type"] == "p":
             text = str(block["text"])
-            style_name = "ResumeStrong" if title == "Formação acadêmica" and not story[-1].__class__.__name__ == "Paragraph" else "ResumeBody"
-            if title == "Formação acadêmica" and text == "Bacharelado em Ciência da Computação":
+            style_name = "ResumeStrong" if title in {"Formação acadêmica", "Education"} and not story[-1].__class__.__name__ == "Paragraph" else "ResumeBody"
+            if title in {"Formação acadêmica", "Education"} and text in {"Bacharelado em Ciência da Computação", "Bachelor's Degree in Computer Science"}:
                 target = story
                 target.append(paragraph(text, "ResumeStrong", styles))
             else:
@@ -346,8 +349,10 @@ def draw_first_page(canvas, doc) -> None:
 
     canvas.setFillColor(colors.HexColor("#d9e1e7"))
     canvas.setFont("SegoeUI-Light", 14.2)
-    canvas.drawString(left_x, name_y - 18, "Desenvolvedor Front-end | Produto digital")
-    canvas.drawString(left_x, name_y - 34, "Educação digital")
+    subtitle_lines = getattr(doc, "_resume_subtitle_lines", ["Desenvolvedor Front-end | Produto digital", "Educação digital"])
+    canvas.drawString(left_x, name_y - 18, subtitle_lines[0])
+    if len(subtitle_lines) > 1:
+        canvas.drawString(left_x, name_y - 34, subtitle_lines[1])
 
     canvas.setFillColor(colors.HexColor("#eef1f4"))
     canvas.setFont("SegoeUI", 12.2)
@@ -379,47 +384,37 @@ def draw_later_pages(canvas, doc) -> None:
     canvas.setFillColor(colors.HexColor("#f4f1eb"))
     canvas.setFont("SegoeUI-Bold", 10.5)
     canvas.drawString(MARGIN_X, PAGE_HEIGHT - 12 * mm, "Gabriel Roda")
-    canvas.drawRightString(PAGE_WIDTH - MARGIN_X, PAGE_HEIGHT - 12 * mm, f"Página {doc.page}")
+    page_label = getattr(doc, "_resume_page_label", "Página")
+    canvas.drawRightString(PAGE_WIDTH - MARGIN_X, PAGE_HEIGHT - 12 * mm, f"{page_label} {doc.page}")
     canvas.restoreState()
 
 
-def resolve_output_path() -> Path:
-    if not OUTPUT_PDF.exists():
-        return OUTPUT_PDF
+def resolve_output_path(base_output_pdf: Path) -> Path:
+    if not base_output_pdf.exists():
+        return base_output_pdf
     for idx in range(2, 20):
-        candidate = OUTPUT_DIR / f"gabriel-roda-curriculo-profissional-final-v{idx}.pdf"
+        candidate = base_output_pdf.with_name(f"{base_output_pdf.stem}-v{idx}{base_output_pdf.suffix}")
         if not candidate.exists():
             return candidate
     raise RuntimeError("Não foi possível definir um nome livre para o PDF final.")
 
 
-def build_story(styles: StyleSheet1) -> list:
-    sections = parse_sections(read_source())
+def build_story(styles: StyleSheet1, source_md: Path) -> list:
+    sections, order = parse_sections(read_source(source_md))
     story: list = []
 
-    add_section_story(story, "Resumo executivo", sections["Resumo executivo"], styles)
-    add_section_story(story, "Competências centrais", sections["Competências centrais"], styles)
-    add_section_story(story, "Experiência profissional", sections["Experiência profissional"], styles)
-    add_section_story(
-        story,
-        "Projetos relevantes na trajetória pela Uniasselvi",
-        sections["Projetos relevantes na trajetória pela Uniasselvi"],
-        styles,
-        page_break_before=False,
-    )
-    add_section_story(story, "Formação acadêmica", sections["Formação acadêmica"], styles)
-    add_section_story(
-        story,
-        "Qualificações e atividades complementares",
-        sections["Qualificações e atividades complementares"],
-        styles,
-    )
-    add_section_story(story, "Idiomas", sections["Idiomas"], styles)
-    add_section_story(story, "Informações adicionais", sections["Informações adicionais"], styles)
+    for idx, title in enumerate(order):
+        add_section_story(
+            story,
+            title,
+            sections[title],
+            styles,
+            page_break_before=False,
+        )
     return story
 
 
-def render_pdf(pdf_path: Path) -> None:
+def render_pdf(pdf_path: Path, source_md: Path, lang: str) -> None:
     register_fonts()
     styles = build_styles()
 
@@ -430,9 +425,15 @@ def render_pdf(pdf_path: Path) -> None:
         rightMargin=MARGIN_X,
         topMargin=0,
         bottomMargin=BOTTOM_MARGIN,
-        title="Gabriel Roda - Currículo Profissional",
+        title="Gabriel Roda - Professional Resume" if lang == "en" else "Gabriel Roda - Currículo Profissional",
         author="Gabriel Roda",
     )
+    if lang == "en":
+        doc._resume_subtitle_lines = ["Front-End Developer | Digital Product", "Digital Education"]
+        doc._resume_page_label = "Page"
+    else:
+        doc._resume_subtitle_lines = ["Desenvolvedor Front-end | Produto digital", "Educação digital"]
+        doc._resume_page_label = "Página"
 
     first_frame = Frame(
         MARGIN_X,
@@ -456,7 +457,7 @@ def render_pdf(pdf_path: Path) -> None:
         ]
     )
 
-    story = build_story(styles)
+    story = build_story(styles, source_md)
     doc.build(story)
 
 
@@ -484,9 +485,18 @@ def inspect_links(pdf_path: Path) -> list[tuple[int, list[str]]]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", default=str(DEFAULT_SOURCE_MD))
+    parser.add_argument("--output", default=str(DEFAULT_OUTPUT_PDF))
+    parser.add_argument("--lang", choices=["pt", "en"], default="pt")
+    args = parser.parse_args()
+
+    source_md = Path(args.source)
+    output_pdf_base = Path(args.output)
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    pdf_path = resolve_output_path()
-    render_pdf(pdf_path)
+    pdf_path = resolve_output_path(output_pdf_base)
+    render_pdf(pdf_path, source_md, args.lang)
     previews = render_previews(pdf_path)
     link_data = inspect_links(pdf_path)
 

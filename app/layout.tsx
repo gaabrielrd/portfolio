@@ -1,12 +1,12 @@
-import Navbar from "@/components/navbar";
 import "./globals.scss";
 import type { Metadata } from "next";
 
 import { Libre_Baskerville } from "next/font/google";
 import localFont from "next/font/local";
-import Blobs from "@/components/blobs";
+import { headers } from "next/headers";
 import { Analytics } from "@vercel/analytics/react";
-import Footer from "@/components/footer";
+
+import { fallbackLocale, localeHeaderName, normalizeLocale } from "@/lib/i18n/config";
 
 const bodyFont = Libre_Baskerville({
 	weight: ["400", "700"],
@@ -22,27 +22,22 @@ const navFont = localFont({
 
 export const metadata: Metadata = {
 	title: "roda.dev",
-	description: "Gabriel Roda, front-end dev",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
-	return (
-		<html lang="en">
-			<head></head>
+	const requestHeaders = await headers();
+	const requestLocale =
+		normalizeLocale(requestHeaders.get(localeHeaderName)) ?? fallbackLocale;
 
+	return (
+		<html lang={requestLocale}>
+			<head></head>
 			<body className={[bodyFont.variable, navFont.variable].join(" ")}>
-				<div className="app-shell">
-					<Navbar />
-					<div className="page-shell">
-						{children}
-						<Blobs />
-					</div>
-				</div>
-				<Footer />
+				{children}
 				<Analytics />
 			</body>
 		</html>

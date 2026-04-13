@@ -1,30 +1,49 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 
-export default function Footer() {
+type FooterLink = {
+	href: string;
+	label: string;
+};
+
+type FooterProps = {
+	creditsLabel: string;
+	email: string;
+	emailLabel: string;
+	externalLinks: FooterLink[];
+	iconsByLabel: string;
+	iconsByUrl: string;
+	rightsLabel: string;
+};
+
+export default function Footer({
+	creditsLabel,
+	email,
+	emailLabel,
+	externalLinks,
+	iconsByLabel,
+	iconsByUrl,
+	rightsLabel,
+}: FooterProps) {
 	return (
 		<div className={styles.footer}>
 			<div className={styles.wrapper}>
 				<p>
-					© 2026 <a href="mailto:gabriel@roda.dev">gabriel@roda.dev</a>
+					{rightsLabel} <a href={`mailto:${email}`}>{emailLabel}</a>
 				</p>
 
 				<p>
-					ícones e imagens por{" "}
-					<Link href={"https://icons8.com"} target="_blank">
-						Icons8
+					{iconsByLabel}{" "}
+					<Link href={iconsByUrl} target="_blank">
+						{creditsLabel}
 					</Link>
 				</p>
 				<div className={styles.links}>
-					<Link target="_blank" href={`https://github.com/gaabrielrd`}>
-						Github
-					</Link>
-					<Link
-						target="_blank"
-						href={`https://www.linkedin.com/in/gabriel-roda/`}
-					>
-						LinkedIn
-					</Link>
+					{externalLinks.map((link) => (
+						<Link key={link.href} target="_blank" href={link.href}>
+							{link.label}
+						</Link>
+					))}
 				</div>
 			</div>
 		</div>

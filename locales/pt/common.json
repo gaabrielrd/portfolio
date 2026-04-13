@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "brandAlt": "Ícone de laptop",
+    "brandName": "roda.dev",
+    "languageLabel": "Selecionar idioma",
+    "localeOptions": {
+      "pt": "Português",
+      "en": "English"
+    },
+    "items": [
+      {
+        "href": "/",
+        "label": "Home"
+      },
+      {
+        "href": "/about",
+        "label": "Sobre"
+      },
+      {
+        "href": "/projects",
+        "label": "Projetos"
+      }
+    ]
+  },
+  "footer": {
+    "rightsLabel": "© 2026",
+    "email": "gabriel@roda.dev",
+    "emailLabel": "gabriel@roda.dev",
+    "iconsByLabel": "ícones e imagens por",
+    "iconsByUrl": "https://icons8.com",
+    "creditsLabel": "Icons8",
+    "externalLinks": [
+      {
+        "href": "https://github.com/gaabrielrd",
+        "label": "Github"
+      },
+      {
+        "href": "https://www.linkedin.com/in/gabriel-roda/",
+        "label": "LinkedIn"
+      }
+    ]
+  }
+}

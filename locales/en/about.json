@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "title": "About | roda.dev",
+    "description": "Gabriel Roda, front-end developer focused on digital education, product, and learning experiences."
+  },
+  "hero": {
+    "eyebrow": "About",
+    "name": "Gabriel Roda",
+    "role": "Front-end developer focused on education and digital product.",
+    "intro": "Front-end developer passionate about education, with 6 years building materials and platforms designed to improve learning and access to education for thousands of higher education students in Brazil.",
+    "actions": {
+      "projects": "View projects",
+      "contactHref": "mailto:gabriel@roda.dev",
+      "contactLabel": "Get in touch"
+    },
+    "highlights": [
+      {
+        "alt": "Learning objects icon",
+        "label": "learning objects",
+        "value": "500+"
+      },
+      {
+        "alt": "Platforms icon",
+        "label": "platforms created",
+        "value": "5+"
+      },
+      {
+        "alt": "Projects icon",
+        "label": "exploratory projects",
+        "value": "20+"
+      }
+    ],
+    "cubeAlt": "3D cube illustration"
+  },
+  "focus": {
+    "eyebrow": "What I build",
+    "title": "Interfaces and platforms that need to be clear, useful, and easy to evolve.",
+    "items": [
+      {
+        "title": "Front-end with product context",
+        "description": "Working close to the problem, thinking not only about the interface but also the flow, the clarity of the experience, and what helps the product mature."
+      },
+      {
+        "title": "Digital education and learning experiences",
+        "description": "Building materials, platforms, and interactions for reading, studying, authoring, and discovering content in educational environments."
+      },
+      {
+        "title": "Tools for content teams",
+        "description": "Creating solutions that speed up internal production, organize processes, and reduce the need for technical knowledge when publishing materials."
+      }
+    ]
+  },
+  "career": {
+    "eyebrow": "Journey",
+    "title": "A quick read of the areas where I have been working."
+  },
+  "closing": {
+    "eyebrow": "Contact",
+    "title": "If it makes sense for what you are building, let's talk.",
+    "description": "I can contribute with front-end, educational product work, authoring, internal platforms, and digital experiences focused on clarity.",
+    "links": [
+      {
+        "href": "mailto:gabriel@roda.dev",
+        "label": "Send email"
+      },
+      {
+        "href": "https://github.com/gaabrielrd",
+        "label": "Github",
+        "external": true
+      },
+      {
+        "href": "https://www.linkedin.com/in/gabriel-roda/",
+        "label": "LinkedIn",
+        "external": true
+      }
+    ]
+  }
+}

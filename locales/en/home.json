@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "roda.dev",
+    "description": "Gabriel Roda, front-end developer focused on digital education, product, and content."
+  },
+  "hero": {
+    "eyebrow": "roda.dev",
+    "title": "Front-end for learning experiences, product, and digital content.",
+    "intro": [
+      "I am a front-end developer with a strong focus on digital education and product work.",
+      "I am always looking to stay current and connected to new trends and technologies.",
+      "I build materials, platforms, and digital flows that bring clarity, scale, and care to education-focused projects."
+    ],
+    "actions": {
+      "projects": "View projects",
+      "about": "About me"
+    },
+    "metrics": [
+      {
+        "alt": "Learning objects icon",
+        "label": "learning objects created",
+        "value": "500+"
+      },
+      {
+        "alt": "Platforms icon",
+        "label": "learning and production platforms",
+        "value": "5+"
+      },
+      {
+        "alt": "Projects icon",
+        "label": "exploratory projects in new technologies",
+        "value": "20+"
+      }
+    ],
+    "visual": {
+      "cubeAlt": "3D cube illustration"
+    }
+  },
+  "support": {
+    "eyebrow": "Focus",
+    "title": "Interfaces that help people study, produce, and make better decisions.",
+    "items": [
+      {
+        "title": "Digital education",
+        "description": "Materials, learning paths, responsive reading, and interactions that reduce friction in the learning journey."
+      },
+      {
+        "title": "Product with context",
+        "description": "Front-end connected to flow, operations, and the real evolution of a platform, not only to the visual layer."
+      },
+      {
+        "title": "Internal tools",
+        "description": "Authoring and production environments designed to bring speed and consistency to content teams."
+      }
+    ]
+  }
+}

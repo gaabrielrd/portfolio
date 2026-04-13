@@ -15,6 +15,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
 	padding: 16px;
 
 	border-radius: 8px 8px 0 0;
@@ -36,5 +38,17 @@
 			text-decoration: none;
 			color: inherit;
 		}
+	}
+}
+
+@media (max-width: 720px) {
+	.wrapper {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.links {
+		width: 100%;
+		justify-content: center;
 	}
 }

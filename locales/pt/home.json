@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "roda.dev",
+    "description": "Gabriel Roda, desenvolvedor front-end com foco em educação digital, produto e conteúdo."
+  },
+  "hero": {
+    "eyebrow": "roda.dev",
+    "title": "Front-end para experiências de aprendizagem, produto e conteúdo digital.",
+    "intro": [
+      "Sou um desenvolvedor com foco em front-end, apaixonado por educação e produto digital.",
+      "Estou sempre buscando me atualizar e conectar às novas tendências e tecnologias.",
+      "Crio materiais, plataformas e fluxos digitais que aproximam clareza, escala e cuidado em projetos voltados para educação."
+    ],
+    "actions": {
+      "projects": "Ver projetos",
+      "about": "Sobre mim"
+    },
+    "metrics": [
+      {
+        "alt": "Ícone de objetos de aprendizagem",
+        "label": "objetos de aprendizagem criados",
+        "value": "+ de 500"
+      },
+      {
+        "alt": "Ícone de plataformas",
+        "label": "plataformas de aprendizagem e produção",
+        "value": "+ de 5"
+      },
+      {
+        "alt": "Ícone de projetos",
+        "label": "projetos exploratórios em novas tecnologias",
+        "value": "+ de 20"
+      }
+    ],
+    "visual": {
+      "cubeAlt": "Ilustração de cubo 3D"
+    }
+  },
+  "support": {
+    "eyebrow": "Foco",
+    "title": "Interfaces que ajudam pessoas a estudar, produzir e decidir melhor.",
+    "items": [
+      {
+        "title": "Educação digital",
+        "description": "Materiais, trilhas, leitura responsiva e interações que reduzem atrito no aprendizado."
+      },
+      {
+        "title": "Produto com contexto",
+        "description": "Front-end conectado a fluxo, operação e evolução real de plataforma, não só à camada visual."
+      },
+      {
+        "title": "Ferramentas internas",
+        "description": "Ambientes de autoria e produção pensados para dar velocidade e consistência a times de conteúdo."
+      }
+    ]
+  }
+}

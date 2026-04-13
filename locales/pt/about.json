@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "title": "Sobre | roda.dev",
+    "description": "Gabriel Roda, desenvolvedor front-end com foco em educação digital, produto e experiências de aprendizagem."
+  },
+  "hero": {
+    "eyebrow": "Sobre",
+    "name": "Gabriel Roda",
+    "role": "Desenvolvedor front-end com foco em educação e produto digital.",
+    "intro": "Desenvolvedor front-end, apaixonado por educação, há 6 anos criando materiais e plataformas que buscam facilitar o aprendizado e o acesso à educação de milhares de alunos da educação superior no Brasil.",
+    "actions": {
+      "projects": "Ver projetos",
+      "contactHref": "mailto:gabriel@roda.dev",
+      "contactLabel": "Entrar em contato"
+    },
+    "highlights": [
+      {
+        "alt": "Ícone de objetos de aprendizagem",
+        "label": "objetos de aprendizagem",
+        "value": "+ de 500"
+      },
+      {
+        "alt": "Ícone de plataformas",
+        "label": "plataformas criadas",
+        "value": "+ de 5"
+      },
+      {
+        "alt": "Ícone de projetos",
+        "label": "projetos exploratórios",
+        "value": "+ de 20"
+      }
+    ],
+    "cubeAlt": "Ilustração de cubo 3D"
+  },
+  "focus": {
+    "eyebrow": "O que eu construo",
+    "title": "Interfaces e plataformas que precisam ser claras, úteis e fáceis de evoluir.",
+    "items": [
+      {
+        "title": "Front-end com contexto de produto",
+        "description": "Atuação próxima do problema, pensando não só na interface, mas também no fluxo, na clareza da experiência e no que ajuda o produto a amadurecer."
+      },
+      {
+        "title": "Educação digital e experiências de aprendizagem",
+        "description": "Construção de materiais, plataformas e interações voltadas para leitura, estudo, autoria e descoberta de conteúdo em ambientes educacionais."
+      },
+      {
+        "title": "Ferramentas para quem produz conteúdo",
+        "description": "Criação de soluções que aceleram a produção interna, organizam processos e reduzem a dependência de conhecimento técnico para publicar materiais."
+      }
+    ]
+  },
+  "career": {
+    "eyebrow": "Trajetória",
+    "title": "Uma leitura rápida das frentes em que venho atuando."
+  },
+  "closing": {
+    "eyebrow": "Contato",
+    "title": "Se fizer sentido para o que você está construindo, vamos conversar.",
+    "description": "Posso contribuir com front-end, produto educacional, authoring, plataformas internas e experiências digitais com foco em clareza.",
+    "links": [
+      {
+        "href": "mailto:gabriel@roda.dev",
+        "label": "Enviar e-mail"
+      },
+      {
+        "href": "https://github.com/gaabrielrd",
+        "label": "Github",
+        "external": true
+      },
+      {
+        "href": "https://www.linkedin.com/in/gabriel-roda/",
+        "label": "LinkedIn",
+        "external": true
+      }
+    ]
+  }
+}
