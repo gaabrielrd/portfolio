@@ -194,3 +194,146 @@ Entre as funcionalidades, estavam:
 - Cadastro de produtos, categorias e subcategorias
 - Criação e salvamento de propostas com exportação em PPT
 - Composição detalhada da proposta com produtos, descontos por item, preço, subtotal, impostos, desconto geral e valor final
+
+
+## Projetos públicos no GitHub | Atividade em 2026
+
+Seleção de repositórios públicos próprios com atividade recente, incluindo aplicações, materiais de formação e protótipos. Os projetos em estágio inicial estão identificados abaixo.
+
+### Shortener
+
+Encurtador de URLs para equipes criarem links públicos personalizados e acompanharem os acessos em um só lugar.
+
+- Equipes, convites e níveis de acesso para administradores e membros
+- Redirecionamento público, métricas de cliques e histórico de alterações
+
+Tecnologias: React, TypeScript, Firebase, Analytics.
+
+Código público: [GitHub](https://github.com/gaabrielrd/shortener).
+
+### Writer Assistant
+
+Assistente para escritores de ficção que reúne organização de livros e universos, editor rico e apoio de IA contextualizado com o mundo da história.
+
+- Compêndio de personagens, locais e conceitos conectado à escrita
+- Autocomplete e sugestões de escrita com contexto de lore
+- Exportação em PDF, DOCX e Markdown, além de publicação interativa para leitores
+
+Tecnologias: React, TypeScript, Firebase, Tiptap, IA.
+
+Código público: [GitHub](https://github.com/gaabrielrd/writer).
+
+### PoE Crafting Planner
+
+Protótipo de planejador de crafting para Path of Exile 1, com importação de itens e estratégias geradas a partir de um conjunto inicial de dados.
+
+- Confirmação do item, validação de craftabilidade e pedido versionado
+- Registro local da execução e comparação entre estimativas e resultados
+- Regras e dados separados em pacotes; cobertura do jogo ainda em expansão
+
+Tecnologias: React, TypeScript, Firebase, Monorepo.
+
+Protótipo: [GitHub](https://github.com/gaabrielrd/poe-crafter).
+
+### Formação com Agentes de Código
+
+Formação prática para equipes e gestores estruturarem aplicações com agentes de código, do problema inicial à entrega testada e documentada.
+
+- Encontro de gestão e três encontros de execução com roteiros e exercícios
+- Slides, entregáveis e referências publicados junto aos materiais
+- Templates web e Python com organização, documentação e validação local
+
+Tecnologias: Docsify, React, Python, IA.
+
+Código público: [GitHub](https://github.com/gaabrielrd/treinamento-ia).
+
+### Duna: A Abdicação — Leitor Web
+
+Leitor web para Duna: A Abdicação, com navegação por capítulos e informações sobre o universo narrativo reveladas conforme a leitura avança.
+
+- Nove capítulos com fichas contextuais de personagens e lugares
+- Temas de leitura e opções de tipografia para personalizar a experiência
+
+Tecnologias: React, TypeScript, vinext, Leitura digital.
+
+Código público: [GitHub](https://github.com/gaabrielrd/dune-trilogy-iii).
+
+### Local Model Workers MCP
+
+Servidor MCP para delegar exploração de código, busca semântica e tarefas de manutenção a modelos de IA executados localmente.
+
+- Integração com LM Studio, Ollama, vLLM e LocalAI
+- Resultados estruturados e diffs validados, sem aplicar alterações no projeto
+- Ferramentas para testes, documentação e correções de lint e tipos
+
+Tecnologias: TypeScript, MCP, Ollama, LM Studio.
+
+Código público: [GitHub](https://github.com/gaabrielrd/local-model-workers-mcp).
+
+### Receitas
+
+PWA colaborativa para grupos organizarem receitas e acompanharem ingredientes, etapas e cronômetros de preparo em tempo real.
+
+- Organização compartilhada do que comprar e do que já foi preparado
+- Interface instalável e sincronização com Firebase
+
+Tecnologias: React, TypeScript, Firebase, PWA.
+
+Código público: [GitHub](https://github.com/gaabrielrd/receitas).
+
+### Timekeeper
+
+Dashboard de contagem regressiva para expediente, pagamentos, feriados e eventos pessoais, com personalização visual e sincronização em tempo real.
+
+- Contadores pessoais e compartilhados, timeline e widgets de clima
+- Fundos animados, modo de foco e paisagens sonoras
+- PWA com shell offline, alertas e configurações sincronizadas pelo Firestore
+
+Tecnologias: JavaScript, Firebase, PWA, WebGL.
+
+Código público: [GitHub](https://github.com/gaabrielrd/timekeeper) · [Abrir projeto](https://timekeeper.roda.dev/).
+
+### Vibe Coder Idle
+
+Protótipo de jogo incremental para iPhone e iPad sobre desenvolvimento com IA, em que projetos, máquinas e modelos fazem parte da progressão.
+
+- Interação ativa, automação de projetos e progresso offline
+- Saves locais versionados e recursos de acessibilidade nativos
+
+Tecnologias: Swift, SwiftUI, iOS, iPadOS.
+
+Protótipo: [GitHub](https://github.com/gaabrielrd/vibe-coder-idle).
+
+### Dungeon Crawler
+
+Protótipo de dungeon crawler 2D para dispositivos móveis, com fundação de combate por turnos e dados configuráveis no Unity.
+
+- Domínio de combate em C# com turnos, ataques básicos e validação de alvos
+- Definições em ScriptableObjects e testes EditMode
+- Progressão, exploração de masmorras e produção de conteúdo ainda planejadas
+
+Tecnologias: Unity, C#, ScriptableObject, Mobile.
+
+Protótipo: [GitHub](https://github.com/gaabrielrd/dungeon-crawler).
+
+### EduFlow
+
+Plataforma modular de cursos digitais que reúne autoria, publicação versionada, matrículas, acompanhamento de progresso e quizzes.
+
+- Monorepo com aplicação Next.js, API NestJS e contratos compartilhados
+- PostgreSQL e Prisma para persistência, com componentes de interface reutilizáveis
+
+Tecnologias: Next.js, NestJS, PostgreSQL, Prisma.
+
+Código público: [GitHub](https://github.com/gaabrielrd/eduflow).
+
+### MTG Live Counters
+
+Contador de vida para Magic: The Gathering em desenvolvimento, com autenticação, criação de partidas e entrada por código ou link.
+
+- Frontend React e infraestrutura AWS organizados em monorepo
+- Evolução voltada ao acompanhamento de partidas entre múltiplos jogadores
+
+Tecnologias: React, TypeScript, AWS, DynamoDB.
+
+Em desenvolvimento: [GitHub](https://github.com/gaabrielrd/mtg-live-counters).

@@ -54,7 +54,10 @@ export default async function ProjectsPage({ params }: ProjectsPageProps) {
 	const companySections = t("companySections", {
 		returnObjects: true,
 	}) as CompanySection[];
-	const displayedSections = [...companySections].reverse();
+	const publicSection = t("publicSection", {
+		returnObjects: true,
+	}) as CompanySection;
+	const displayedSections = [publicSection, ...[...companySections].reverse()];
 	const statImages = [platformsImage, projectsImage, resourcesImage] as const;
 
 	return (
@@ -144,11 +147,7 @@ export default async function ProjectsPage({ params }: ProjectsPageProps) {
 										<div>
 											<div className={styles.projectMeta}>
 												<span>{company.company}</span>
-												{project.status === "teaser" ? (
-													<em>{t("projectStatus.teaser")}</em>
-												) : (
-													<em>{t("projectStatus.published")}</em>
-												)}
+												<em>{t(`projectStatus.${project.status}`)}</em>
 											</div>
 											<h4>{project.title}</h4>
 										</div>

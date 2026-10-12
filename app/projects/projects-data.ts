@@ -1,4 +1,4 @@
-export type ProjectStatus = "published" | "teaser";
+export type ProjectStatus = "published" | "teaser" | "public" | "prototype" | "development";
 
 export type ProjectLink = {
 	label: string;

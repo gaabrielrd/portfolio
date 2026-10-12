@@ -144,7 +144,7 @@
 
 .companyNav {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 18px;
 	margin-top: 32px;
 }
@@ -196,6 +196,7 @@
 
 .companySection {
 	display: grid;
+	scroll-margin-top: 120px;
 	grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.6fr);
 	gap: 32px;
 	align-items: start;

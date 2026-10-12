@@ -1,14 +1,14 @@
 {
   "metadata": {
     "title": "Projetos | roda.dev",
-    "description": "Projetos profissionais de Gabriel Roda em educação, plataformas digitais, autoria e experiências de aprendizagem."
+    "description": "Projetos públicos de Gabriel Roda no GitHub e trajetória profissional em educação, plataformas digitais, IA e experiências interativas."
   },
   "hero": {
     "eyebrow": "Projetos",
-    "title": "Produtos, experiências e ferramentas criadas para melhorar como as pessoas aprendem.",
-    "description": "Da produção de objetos de aprendizagem até plataformas completas de autoria e leitura digital, esta página organiza os projetos que marcaram minha trajetória recente em educação e produto.",
+    "title": "Produtos, experiências e ferramentas para aprender, criar e explorar novas ideias.",
+    "description": "Projetos públicos recentes no GitHub, de ferramentas de escrita e IA a aplicações colaborativas e jogos, junto às plataformas educacionais que marcaram minha trajetória profissional.",
     "actions": {
-      "timeline": "Explorar trajetória",
+      "timeline": "Explorar projetos",
       "contactHref": "mailto:gabriel@roda.dev",
       "contactLabel": "Conversar sobre projetos"
     },
@@ -21,24 +21,27 @@
       {
         "alt": "Ícone de projetos",
         "label": "projetos mapeados",
-        "value": 19
+        "value": 31
       },
       {
-        "alt": "Ícone de jornada",
-        "label": "fases da jornada",
-        "value": 3
+        "alt": "Ícone de projetos públicos",
+        "label": "repositórios públicos",
+        "value": 12
       }
     ],
     "cubeAlt": "Ilustração de cubo 3D"
   },
   "overview": {
-    "eyebrow": "Linha do tempo",
-    "title": "Uma leitura rápida da evolução entre conteúdo, produto e authoring.",
-    "ariaLabel": "Empresas e períodos"
+    "eyebrow": "Projetos e trajetória",
+    "title": "Explorações recentes e a experiência que sustenta cada projeto.",
+    "ariaLabel": "Projetos públicos, empresas e períodos"
   },
   "projectStatus": {
     "published": "projeto publicado",
-    "teaser": "em atualização"
+    "teaser": "em atualização",
+    "public": "código público",
+    "prototype": "protótipo",
+    "development": "em desenvolvimento"
   },
   "tagsAriaLabel": "Tecnologias e temas",
   "closing": {
@@ -442,5 +445,277 @@
         }
       ]
     }
-  ]
+  ],
+  "publicSection": {
+    "slug": "github",
+    "company": "Projetos públicos",
+    "period": "Atividade em 2026",
+    "role": "Aplicações, ferramentas de IA e experiências interativas",
+    "summary": "Uma seleção de 12 repositórios públicos próprios com atividade recente no GitHub. Reúne produtos, materiais de formação e protótipos em diferentes estágios de desenvolvimento.",
+    "projects": [
+      {
+        "title": "Shortener",
+        "description": "Encurtador de URLs para equipes criarem links públicos personalizados e acompanharem os acessos em um só lugar.",
+        "highlights": [
+          "Equipes, convites e níveis de acesso para administradores e membros",
+          "Redirecionamento público, métricas de cliques e histórico de alterações"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/shortener"
+          }
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "Firebase",
+          "Analytics"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "Writer Assistant",
+        "description": "Assistente para escritores de ficção que reúne organização de livros e universos, editor rico e apoio de IA contextualizado com o mundo da história.",
+        "highlights": [
+          "Compêndio de personagens, locais e conceitos conectado à escrita",
+          "Autocomplete e sugestões de escrita com contexto de lore",
+          "Exportação em PDF, DOCX e Markdown, além de publicação interativa para leitores"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/writer"
+          }
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "Firebase",
+          "Tiptap",
+          "IA"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "PoE Crafting Planner",
+        "description": "Protótipo de planejador de crafting para Path of Exile 1, com importação de itens e estratégias geradas a partir de um conjunto inicial de dados.",
+        "highlights": [
+          "Confirmação do item, validação de craftabilidade e pedido versionado",
+          "Registro local da execução e comparação entre estimativas e resultados",
+          "Regras e dados separados em pacotes; cobertura do jogo ainda em expansão"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/poe-crafter"
+          }
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "Firebase",
+          "Monorepo"
+        ],
+        "status": "prototype"
+      },
+      {
+        "title": "Formação com Agentes de Código",
+        "description": "Formação prática para equipes e gestores estruturarem aplicações com agentes de código, do problema inicial à entrega testada e documentada.",
+        "highlights": [
+          "Encontro de gestão e três encontros de execução com roteiros e exercícios",
+          "Slides, entregáveis e referências publicados junto aos materiais",
+          "Templates web e Python com organização, documentação e validação local"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/treinamento-ia"
+          }
+        ],
+        "tags": [
+          "Docsify",
+          "React",
+          "Python",
+          "IA"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "Duna: A Abdicação — Leitor Web",
+        "description": "Leitor web para Duna: A Abdicação, com navegação por capítulos e informações sobre o universo narrativo reveladas conforme a leitura avança.",
+        "highlights": [
+          "Nove capítulos com fichas contextuais de personagens e lugares",
+          "Temas de leitura e opções de tipografia para personalizar a experiência"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/dune-trilogy-iii"
+          }
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "vinext",
+          "Leitura digital"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "Local Model Workers MCP",
+        "description": "Servidor MCP para delegar exploração de código, busca semântica e tarefas de manutenção a modelos de IA executados localmente.",
+        "highlights": [
+          "Integração com LM Studio, Ollama, vLLM e LocalAI",
+          "Resultados estruturados e diffs validados, sem aplicar alterações no projeto",
+          "Ferramentas para testes, documentação e correções de lint e tipos"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/local-model-workers-mcp"
+          }
+        ],
+        "tags": [
+          "TypeScript",
+          "MCP",
+          "Ollama",
+          "LM Studio"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "Receitas",
+        "description": "PWA colaborativa para grupos organizarem receitas e acompanharem ingredientes, etapas e cronômetros de preparo em tempo real.",
+        "highlights": [
+          "Organização compartilhada do que comprar e do que já foi preparado",
+          "Interface instalável e sincronização com Firebase"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/receitas"
+          }
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "Firebase",
+          "PWA"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "Timekeeper",
+        "description": "Dashboard de contagem regressiva para expediente, pagamentos, feriados e eventos pessoais, com personalização visual e sincronização em tempo real.",
+        "highlights": [
+          "Contadores pessoais e compartilhados, timeline e widgets de clima",
+          "Fundos animados, modo de foco e paisagens sonoras",
+          "PWA com shell offline, alertas e configurações sincronizadas pelo Firestore"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/timekeeper"
+          },
+          {
+            "label": "Abrir projeto",
+            "href": "https://timekeeper.roda.dev/"
+          }
+        ],
+        "tags": [
+          "JavaScript",
+          "Firebase",
+          "PWA",
+          "WebGL"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "Vibe Coder Idle",
+        "description": "Protótipo de jogo incremental para iPhone e iPad sobre desenvolvimento com IA, em que projetos, máquinas e modelos fazem parte da progressão.",
+        "highlights": [
+          "Interação ativa, automação de projetos e progresso offline",
+          "Saves locais versionados e recursos de acessibilidade nativos"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/vibe-coder-idle"
+          }
+        ],
+        "tags": [
+          "Swift",
+          "SwiftUI",
+          "iOS",
+          "iPadOS"
+        ],
+        "status": "prototype"
+      },
+      {
+        "title": "Dungeon Crawler",
+        "description": "Protótipo de dungeon crawler 2D para dispositivos móveis, com fundação de combate por turnos e dados configuráveis no Unity.",
+        "highlights": [
+          "Domínio de combate em C# com turnos, ataques básicos e validação de alvos",
+          "Definições em ScriptableObjects e testes EditMode",
+          "Progressão, exploração de masmorras e produção de conteúdo ainda planejadas"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/dungeon-crawler"
+          }
+        ],
+        "tags": [
+          "Unity",
+          "C#",
+          "ScriptableObject",
+          "Mobile"
+        ],
+        "status": "prototype"
+      },
+      {
+        "title": "EduFlow",
+        "description": "Plataforma modular de cursos digitais que reúne autoria, publicação versionada, matrículas, acompanhamento de progresso e quizzes.",
+        "highlights": [
+          "Monorepo com aplicação Next.js, API NestJS e contratos compartilhados",
+          "PostgreSQL e Prisma para persistência, com componentes de interface reutilizáveis"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/eduflow"
+          }
+        ],
+        "tags": [
+          "Next.js",
+          "NestJS",
+          "PostgreSQL",
+          "Prisma"
+        ],
+        "status": "public"
+      },
+      {
+        "title": "MTG Live Counters",
+        "description": "Contador de vida para Magic: The Gathering em desenvolvimento, com autenticação, criação de partidas e entrada por código ou link.",
+        "highlights": [
+          "Frontend React e infraestrutura AWS organizados em monorepo",
+          "Evolução voltada ao acompanhamento de partidas entre múltiplos jogadores"
+        ],
+        "links": [
+          {
+            "label": "Ver no GitHub",
+            "href": "https://github.com/gaabrielrd/mtg-live-counters"
+          }
+        ],
+        "tags": [
+          "React",
+          "TypeScript",
+          "AWS",
+          "DynamoDB"
+        ],
+        "status": "development"
+      }
+    ]
+  }
 }
